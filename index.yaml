@@ -3,6 +3,43 @@ entries:
   patroni:
   - apiVersion: v2
     appVersion: 2.1-p2
+    created: "2024-08-09T23:25:16.255995541Z"
+    dependencies:
+    - condition: etcd.deployChart
+      name: etcd
+      repository: https://charts.helm.sh/incubator
+      version: 0.6.2
+    - condition: zookeeper.deployChart
+      name: zookeeper
+      repository: https://charts.helm.sh/incubator
+      version: 1.0.0
+    - condition: consul.deployChart
+      name: consul
+      repository: https://charts.helm.sh/stable
+      version: 3.6.1
+    description: Helm chart for a Patroni Postgresql database cluster
+    digest: 4b3ba8008920729b9702c7be8decfa5f0599b23e6181a60915f92371ced8c76c
+    home: https://timcsaky.github.io/nr-patroni-chart
+    keywords:
+    - patroni
+    - postgresql
+    - database
+    kubeVersion: '>= 1.13.0'
+    maintainers:
+    - email: NR.CommonServiceShowcase@gov.bc.ca
+      name: NR Common Service Showcase Team
+      url: https://bcgov.github.io/common-service-showcase/team.html
+    name: patroni
+    sources:
+    - https://github.com/zalando/patroni
+    - https://github.com/zalando/spilo
+    - https://github.com/TimCsaky/nr-patroni-chart
+    type: application
+    urls:
+    - https://github.com/TimCsaky/nr-patroni-chart/releases/download/patroni-0.9.0/patroni-0.9.0.tgz
+    version: 0.9.0
+  - apiVersion: v2
+    appVersion: 2.1-p2
     created: "2024-08-09T22:59:14.727991548Z"
     dependencies:
     - condition: etcd.deployChart
@@ -192,4 +229,4 @@ entries:
     urls:
     - https://github.com/bcgov/nr-patroni-chart/releases/download/patroni-0.0.1/patroni-0.0.1.tgz
     version: 0.0.1
-generated: "2024-08-09T22:59:14.728038065Z"
+generated: "2024-08-09T23:25:16.256056385Z"
