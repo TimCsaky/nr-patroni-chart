@@ -13,7 +13,7 @@ image:
   tag: ~
 
 imagePullSecrets:
-  - name: artifacts-pull-pipeline-hzrybi
+  - name: artifacts-pull-common-sorcvt
 nameOverride: ~
 fullnameOverride: ~
 
