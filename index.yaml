@@ -77,6 +77,28 @@ entries:
     version: 0.8.0
   - apiVersion: v2
     appVersion: 3.3.2
+    created: "2024-09-17T18:04:38.774403965Z"
+    description: Helm chart for a Patroni Postgresql database cluster
+    digest: 311363662344736b3cf70ec6e9c8708c82d32c5eb1b3a4ab6adf2b693c82effa
+    home: https://timcsaky.github.io/nr-patroni-chart
+    keywords:
+    - patroni
+    - postgresql
+    - database
+    kubeVersion: '>= 1.13.0'
+    maintainers:
+    - email: NR.CommonServiceShowcase@gov.bc.ca
+      name: NR Common Service Showcase Team
+      url: https://bcgov.github.io/common-service-showcase/team.html
+    name: patroni
+    sources:
+    - https://github.com/TimCsaky/nr-patroni-chart
+    type: application
+    urls:
+    - https://github.com/TimCsaky/nr-patroni-chart/releases/download/patroni-0.1.1/patroni-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 3.3.2
     created: "2024-09-11T16:29:22.561194997Z"
     description: Helm chart for a Patroni Postgresql database cluster
     digest: 0165cf4f40d2f7a2434332797b8139992d8d2ee18a7aa841e88e25904e875960
@@ -288,4 +310,4 @@ entries:
     urls:
     - https://github.com/bcgov/nr-patroni-chart/releases/download/patroni-0.0.1/patroni-0.0.1.tgz
     version: 0.0.1
-generated: "2024-09-11T16:29:22.561236654Z"
+generated: "2024-09-17T18:04:38.774457435Z"
