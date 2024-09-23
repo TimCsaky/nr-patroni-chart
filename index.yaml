@@ -77,6 +77,33 @@ entries:
     version: 0.8.0
   - apiVersion: v1
     appVersion: 3.3.2
+    created: "2024-09-23T18:42:22.826609199Z"
+    dependencies:
+    - condition: etcd.deployChart
+      name: etcd
+      repository: https://charts.helm.sh/incubator
+      version: 0.6.2
+    - condition: zookeeper.deployChart
+      name: zookeeper
+      repository: https://charts.helm.sh/incubator
+      version: 1.0.0
+    - condition: consul.deployChart
+      name: consul
+      repository: https://charts.helm.sh/stable
+      version: 3.6.1
+    deprecated: true
+    description: 'DEPRECATED Highly available elephant herd: HA PostgreSQL cluster.'
+    digest: ad84883de3b13568d116130cad2c85525564aa44d4cdccd0ffa889b12fc75dbf
+    home: https://timcsaky.github.io/nr-patroni-chart
+    name: patroni
+    sources:
+    - https://github.com/zalando/patroni
+    - https://github.com/zalando/spilo
+    urls:
+    - https://github.com/TimCsaky/nr-patroni-chart/releases/download/patroni-0.1.4/patroni-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v1
+    appVersion: 3.3.2
     created: "2024-09-23T17:31:04.819824026Z"
     dependencies:
     - condition: etcd.deployChart
@@ -337,4 +364,4 @@ entries:
     urls:
     - https://github.com/bcgov/nr-patroni-chart/releases/download/patroni-0.0.1/patroni-0.0.1.tgz
     version: 0.0.1
-generated: "2024-09-23T17:31:04.819908174Z"
+generated: "2024-09-23T18:42:22.826715668Z"
