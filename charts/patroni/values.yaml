@@ -4,6 +4,7 @@ image:
   repository: artifacts.developer.gov.bc.ca/n1dc-common-docker-local
   tag: 3.3.2
   pullPolicy: IfNotPresent
+  name: patroni-postgres
 imagePullSecrets:
   - name: artifacts-pull-common-sorcvt
 # Credentials used by Patroni
