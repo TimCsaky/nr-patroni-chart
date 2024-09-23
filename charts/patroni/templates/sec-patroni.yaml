@@ -9,9 +9,9 @@ metadata:
     heritage: {{ .Release.Service }}
 type: Opaque
 data:
-  password-superuser: {{ .Values.credentials.superuser | b64enc }}
-  password-admin: {{ .Values.credentials.admin | b64enc }}
-  password-standby: {{ .Values.credentials.standby | b64enc }}
+  password-superuser: {{ randAlphaNum 30 | b64enc | quote }}
+  password-admin: {{ randAlphaNum 30 | b64enc | quote }}
+  password-standby: {{ randAlphaNum 30 | b64enc | quote }}
   app-db-name: {{ .Values.credentials.appDbName | b64enc }}
   app-db-username: {{ .Values.credentials.appDbUserame | b64enc }}
   app-db-password: {{ randAlphaNum 30 | b64enc | quote }}
