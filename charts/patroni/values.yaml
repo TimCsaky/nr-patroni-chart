@@ -15,6 +15,11 @@ credentials:
   admin: cola
   standby: pinacolada
 
+  ## Application database name
+  appDbName: app
+  ## Username of application account
+  appDbUserame: app
+  
 # Distribution Configuration stores
 # Please note that only one of the following stores should be enabled.
 kubernetes:

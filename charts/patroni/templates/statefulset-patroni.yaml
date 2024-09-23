@@ -30,6 +30,21 @@ spec:
         image: "{{ .Values.image.repository }}/{{ .Values.image.name }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         env:
+          - name: APP_DATABASE
+            valueFrom:
+              secretKeyRef:
+                key: app-db-name
+              name: {{ template "patroni.fullname" . }}
+          - name: APP_USER
+            valueFrom:
+              secretKeyRef:
+                key: app-db-username
+              name: {{ template "patroni.fullname" . }}
+          - name: APP_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                key: app-db-password
+              name: {{ template "patroni.fullname" . }}
         - name: PGPASSWORD_SUPERUSER
           valueFrom:
             secretKeyRef:
