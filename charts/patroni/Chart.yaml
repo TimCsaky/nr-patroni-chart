@@ -1,40 +1,10 @@
-apiVersion: v2
+apiVersion: v1
 name: patroni
-# This is the chart version. This version number should be incremented each time you make changes
-# to the chart and its templates, including the app version.
-# Versions are expected to follow Semantic Versioning (https://semver.org/)
-version: 0.1.1
-kubeVersion: ">= 1.13.0"
-description: Helm chart for a Patroni Postgresql database cluster
-# A chart can be either an 'application' or a 'library' chart.
-#
-# Application charts are a collection of templates that can be packaged into versioned archives
-# to be deployed.
-#
-# Library charts provide useful utilities or functions for the chart developer. They're included as
-# a dependency of application charts to inject those utilities and functions into the rendering
-# pipeline. Library charts do not define any templates and therefore cannot be deployed.
-type: application
-keywords:
-  - patroni
-  - postgresql
-  - database
-home: https://timcsaky.github.io/nr-patroni-chart
+description: 'DEPRECATED Highly available elephant herd: HA PostgreSQL cluster.'
+version: 0.16.3
+appVersion: 1.5-p5
+home: https://github.com/zalando/patroni
 sources:
-  - https://github.com/TimCsaky/nr-patroni-chart
-# This is the version number of the application being deployed. This version number should be
-# incremented each time you make changes to the application. Versions are not expected to
-# follow Semantic Versioning. They should reflect the version the application is using.
-# It is recommended to use it with quotes.
-dependencies: []
-maintainers:
-  - name: NR Common Service Showcase Team
-    email: NR.CommonServiceShowcase@gov.bc.ca
-    url: https://bcgov.github.io/common-service-showcase/team.html
-# This is the version number of the application being deployed. This version number should be
-# incremented each time you make changes to the application. Versions are not expected to
-# follow Semantic Versioning. They should reflect the version the application is using.
-# It is recommended to use it with quotes. This should match the intended image tag.
-appVersion: "3.3.2"
-deprecated: false
-annotations: {}
+- https://github.com/zalando/patroni
+- https://github.com/zalando/spilo
+deprecated: true
