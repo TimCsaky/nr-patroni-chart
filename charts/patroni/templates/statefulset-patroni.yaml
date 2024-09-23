@@ -21,6 +21,9 @@ spec:
         app: {{ template "patroni.fullname" . }}
         release: {{ .Release.Name }}
     spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets: {{ toYaml . | nindent 8 }}
+      {{- end }}
       serviceAccountName: {{ template "patroni.serviceAccountName" . }}
       containers:
       - name: {{ .Chart.Name }}
