@@ -1,7 +1,7 @@
 apiVersion: v1
 name: patroni
 description: 'Highly available elephant herd: HA PostgreSQL cluster.'
-version: 0.2.3
+version: 0.2.4
 appVersion: 3.3.2
 home: https://timcsaky.github.io/nr-patroni-chart
 sources:

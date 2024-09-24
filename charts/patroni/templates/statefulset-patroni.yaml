@@ -100,10 +100,6 @@ spec:
         - name: SCOPE
           value: {{ template "patroni.fullname" . }}
         {{- if .Values.walE.enable }}       
-        - name: PATRONI_POSTGRESQL_LISTEN
-          value: 0.0.0.0:5432
-        - name: PATRONI_RESTAPI_LISTEN
-          value: 0.0.0.0:8008        
         - name: USE_WALE
           value: {{ .Values.walE.enable | quote }}
         {{- if .Values.walE.scheduleCronJob }}
@@ -150,6 +146,11 @@ spec:
           value: {{ $val | quote }}
         {{- end }}
         {{- end }}
+        # connectivity?
+        - name: PATRONI_POSTGRESQL_LISTEN
+          value: 0.0.0.0:5432
+        - name: PATRONI_RESTAPI_LISTEN
+          value: 0.0.0.0:8008        
         ports:
         - containerPort: 8008
         - containerPort: 5432
