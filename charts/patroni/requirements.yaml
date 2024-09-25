@@ -1,0 +1,7 @@
+dependencies:
+  - name: crunchy-postgres
+    version: 0.5.0
+    repository: https://bcgov.github.io/crunchy-postgres/
+  - name: crunchy-postgres-tools
+    version: 0.3.0
+    repository: https://bcgov.github.io/crunchy-postgres/
