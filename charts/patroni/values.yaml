@@ -1,5 +1,5 @@
 # crunchy-postgres subchart configuration overrides
-crunchy-postgres:
-  instances:
-    name: haa # high availability
-    replicas: 3
+# crunchy-postgres:
+#   instances:
+#     name: haa # high availability
+#     replicas: 3
