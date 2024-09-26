@@ -81,7 +81,10 @@ spec:
     - name: postgres
       databases:
         - {{ template "crunchy-postgres.fullname" . }}
-
+    # PostgreSQL user and database for our app
+    - name: app
+      databases:
+        - {{ template "crunchy-postgres.fullname" . }}
   {{ if .Values.dataSource.enabled }}
   dataSource:
     pgbackrest:
