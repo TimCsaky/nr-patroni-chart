@@ -3,6 +3,16 @@ entries:
   crunchy-postgres:
   - apiVersion: v2
     appVersion: 5.0.4
+    created: "2024-09-26T20:41:19.442425587Z"
+    description: A Helm chart for Kubernetes
+    digest: 854484fd9c2ee2515d759ae55f9166a8dc230af971aca0fac468eeb4f2f65b48
+    name: crunchy-postgres
+    type: application
+    urls:
+    - https://github.com/TimCsaky/nr-patroni-chart/releases/download/crunchy-postgres-0.0.3/crunchy-postgres-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 5.0.4
     created: "2024-09-26T20:20:15.073256682Z"
     description: A Helm chart for Kubernetes
     digest: ac7f539c93b5a610149c1f954775521bb6eb51acd8304ebd8a84775ad7693ed0
@@ -677,4 +687,4 @@ entries:
     urls:
     - https://github.com/bcgov/nr-patroni-chart/releases/download/patroni-0.0.1/patroni-0.0.1.tgz
     version: 0.0.1
-generated: "2024-09-26T20:20:15.073318698Z"
+generated: "2024-09-26T20:41:19.442493213Z"
