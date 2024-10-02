@@ -112,6 +112,15 @@ patroni:
       max_wal_size: 64MB # default is 1GB
       max_slot_wal_keep_size: 128MB # default is -1, allowing unlimited wal growth when replicas fall behind
 
+# users sets any custom Postgres users and databases that they have  access to
+# as well as any permissions associated with the user account.
+# users:
+#   - name: app
+#     databases:
+#       - app
+#     options: "CREATEROLE"
+users: {}
+
 proxy:
   pgBouncer:
     image: # it's not necessary to specify an image as the images specified in the Crunchy Postgres Operator will be pulled by default
